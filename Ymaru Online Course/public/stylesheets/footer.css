@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .footer{ */
+    /* width: 100%; */
+    /* padding: 20px;
+    padding-bottom: 10px; */
+    /* position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #091118, #2b6777, #2b6777, #2b6777);
+    background-size: 100% 100%;
+    animation: change 10s ease-in-out infinite; */
+    /* z-index: -1; */
+/* } */
+.footer {
+    width: 100%;
+    /* padding: 20px;
+    padding-bottom: 10px; */
+    /* height: 50hv; */
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #091118, #2b6777, #2b6777, #2b6777);
+    background-size: 100% 100%;
+    animation: change 10s ease-in-out infinite;
+    /* z-index: -1; */
+}
+
+.footer .footer-lists {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+}
+
+.footer .footer-logo-link {
+
+    margin-top: 2%;
+
+}
+
+.footer .social-medias {
+
+    margin-top: 3%;
+
+}
+
+.footer .contacts {
+
+    margin-top: 2%;
+    margin-right: 1%;
+
+}
+
+.footer .social-medias ul {
+
+    list-style: none;
+
+}
+
+.footer .social-medias ul li {
+    margin-bottom: 5px;
+    color: white;
+    float: left;
+}
+
+.footer .social-medias ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer .social-medias ul li a:hover {
+    color: aqua;
+}
+
+.footer .social-medias ul li a img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 15px;
+    margin-bottom: -5px;
+}
+/* .footer .footer-lists{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.footer .footer-lists p{
+    color: aqua;
+    font-weight: 500;
+}
+.footer .footer-lists ul{
+    list-style: square;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+.footer .footer-lists ul li{
+    margin-bottom: 5px;
+    color: white;
+}
+.footer .footer-lists ul li a{
+    text-decoration: none;
+    color: white;
+    float: left;
+}
+.footer .footer-lists ul li a:hover{
+    color: aqua;
+}
+.footer .footer-lists ul li a img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: -5px;
+} */
+.footer-lists .social-medias ul{
+    list-style: none;
+    margin-left: 0;
+}
+.footer-lists .social-medias ul li{
+    margin-bottom: 8px;
+}
+.footer-lists .footer-logo-link{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.footer-logo-link .ymaru-logo img{
+    border-radius: 50%;
+}
+.footer-logo-link .ymaru-text p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.footer-logo-link .ymaru-text span{
+    color: aqua;
+    font-size: 17px;
+    letter-spacing: .2em;
+}
+.footer-lists .news-letter .email-input{
+    padding: .25rem;
+    margin-top: 1rem;
+    display: flex;
+}
+.news-letter .email-input input[type="text"]{
+    flex: 1;
+    padding: 1em;
+    border: 1px solid aqua;
+    outline: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.news-letter .email-input input[type="submit"]{
+    background: aqua;
+    color:white;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 1em;
+    width: fit-content;
+    margin: 0 auto;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+.footer .footer-bottom{
+    margin-top: 3%;
+    text-align: center;
+}
+.footer-bottom .privterm a{
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+.footer-bottom .privterm a:hover{
+    text-decoration: underline;
+}
+.footer-bottom .copyright{
+    margin-top: 15px;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 900px){
+    .news-letter .email-input{
+        flex-direction: column;
+        justify-content: space-around;
+        gap: .5rem;
+    }
+    .news-letter .email-input input[type="text"]{
+        width: 100%;
+        border-radius: 8px;
+    }
+    .news-letter .email-input input[type="submit"]{
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+@media (max-width: 730px){
+    .footer-lists{
+        flex-direction: column;
+    }
+    .footer-lists > div{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .news-letter .email-input{
+        flex-direction: row;
+    }
+    .news-letter .email-input input[type="text"]{
+        width: 80%;
+    }
+    .news-letter .email-input input[type="submit"]{
+        width: 20%;
+    }
+}

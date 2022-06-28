@@ -1,0 +1,319 @@
+@import url("../css/footer.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(-45deg, #082032, #8a7e80 , #d0f7f7, #5a706b );
+    background-size:400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.header{
+    width: 100%;
+    height: 80px;
+    padding: 1% 1.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(-45deg, #091118, #47131c , #162e2e, #111816 );
+    background-size:100% 100%;
+    animation: change 10s ease-in-out infinite;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}    
+.header .nav-logo img{
+    height: auto;
+    border-radius: 50%;
+}
+.nav-links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-links ul li a{
+    line-height: 80px;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+.nav-links ul li a:hover{
+    background: rgba(0, 0, 0, .7);
+    border-radius: 6px;
+}
+.mobile-menu-toggle{
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 2px 4px #ffffff33;
+}
+.mobile-menu-toggle img{
+    max-width: 100%;
+    display: block;
+}
+
+.top-image{
+    width: 100%;
+    height: 250px;
+    background-image: url("../Images/contact-us.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.warrper{
+    margin-left: 12%;
+    margin-right: 12%;
+}
+.warrper .title{
+    text-align: center;
+    margin: 1rem auto;
+}
+.warrper .title h1{
+    font-size: 2.5em;
+    color: transparent;
+    background-image: linear-gradient(-45deg, #6e1d2b , #1d4b4b);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.warrper .office-locations{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .4);
+}
+.warrper .office-locations .office{
+    width: 100%;
+}
+.office-locations .office .office-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+}
+.office-locations .office .office-name{
+    margin-block: 1.5rem;
+    text-align: center;
+}
+.bodypart{
+    width: 400px;
+    background:white ;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 4rem auto;
+}
+.bodypart h1{
+    text-align: center;
+    color: #082032;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver; 
+}
+.bodypart form{
+    padding: 0 40px;
+}
+
+.select{
+    color: #082032;
+}
+.radioin label{
+    
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #082032;
+
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+   
+}
+.form-control a{
+    color: #adadad;
+    
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.error input{
+    border-color: #e74c3c;
+}
+.form-control i{
+    position: absolute;
+    visibility: hidden;
+    left:93%;
+    top: 35%;
+   
+}
+.form-control.success i.fa-check-circle{
+    
+    visibility: visible;
+    color: #2ecc71;
+}
+.form-control.error i.fa-exclamation-circle{
+    
+    visibility: visible;
+    color: #e74c3c;
+}
+.form-control small{
+    visibility: hidden;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+.form-control.error small{
+    visibility: visible;
+    
+    color: #e74c3c;
+}
+.forgot-pwd{
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 0 5px;
+}
+.forgot-pwd a{
+    text-decoration: none;
+    color: #575555;
+}
+.forgot-pwd a:hover{
+    color: #575555dc;
+}
+form button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+form button:hover {
+    border-color: #2691d9;
+    transition: .5s;
+}
+
+@media screen and (max-width: 900px){
+    .warrper{
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    .office-locations .office .office-image img{
+        height: 450px;
+    }
+    .fill{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 700px){
+    .header{
+        padding-inline-start: 2%;
+        padding-inline-end: 3%;
+    }
+    .header .nav-logo img{
+        width: 60px;
+    }
+    .mobile-menu-toggle{
+        display: block;
+    }
+    .header .nav-links{
+        position: absolute;
+    }
+    .header .nav-links ul{
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-start;
+        background: linear-gradient(-45deg, #091118, #47131c , #162e2e, #111816 );
+        background-size:100% 100%;
+        right: 0;
+        top: 80px;
+        height: calc(100vh - 80px);
+        width: 300px;
+        margin-right: -300px;
+        padding-top: 2rem;
+        opacity: .5;
+        transition: all 600ms;
+    }
+    .nav-links ul li{
+        width: 100%;
+    }
+    .nav-links ul li a{
+        line-height: 40px;
+        float: left;
+    }
+    .nav-links ul li:hover{
+        background-color: rgba(255,255,255,.3);
+    }
+    .nav-links ul li a:hover{
+        background-color: transparent;
+        color: #c9c1c1;
+    }
+    .nav-links ul[aria-expanded="true"]{
+        opacity: 1;
+        margin-right: 0;
+    }
+    .warrper{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .office-locations .office .office-image img{
+        height: 360px;
+    }
+    .fill{
+        width: 85%;
+    }
+}
